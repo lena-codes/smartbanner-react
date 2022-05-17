@@ -18,6 +18,9 @@
     "react-scripts": "file:../node_modules/react-scripts",
     "smartbanner-react": "file:.."
   },
+  "resolutions": {
+    "postcss": "8"
+  },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "7.8.3"
   },
