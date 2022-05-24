@@ -23,15 +23,17 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "16.x"
+    "react": "16.x",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
     "nwb": "0.25.x",
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "gh-pages": "^4.0.0"
   },
-  "author": "lena.codes",
-  "homepage": "",
+  "author": "lena-codes",
+  "homepage": "https://lena-codes.github.io/smartbanner-react/",
   "license": "MIT",
   "repository": "https://github.com/lena-codes/smartbanner-react",
   "keywords": [
