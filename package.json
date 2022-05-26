@@ -13,7 +13,8 @@
   ],
   "scripts": {
     "build": "npx tsc && nwb build-react-component",
-    "clean": "rm demo/src/index.js src/Icon/CloseIcon.js src/index.js && nwb clean-module && nwb clean-demo",
+    "clean": "npm run clean:js && nwb clean-module && nwb clean-demo",
+    "clean:js": "rm demo/src/index.js src/Icon/CloseIcon.js src/index.js",
     "prepublishOnly": "npm run build",
     "start": "nwb serve-react-demo",
     "test": "nwb test-react",

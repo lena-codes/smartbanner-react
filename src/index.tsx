@@ -10,7 +10,7 @@ interface SmartBannerProps {
   buttonText: string
   buttonLink: string
   background?: string
-  onClose?: () => {} | void
+  onClose?: () => void
   textColor?: string
 }
 
