@@ -10,3 +10,5 @@ npm-debug.log*
 /demo/**/*.js
 
 tsconfig.tsbuildinfo
+
+.DS_Store
