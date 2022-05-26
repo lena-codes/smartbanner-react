@@ -9,14 +9,24 @@ export const Demo: React.FC = () => {
     <div>
       <SmartBanner
         src='https://cataas.com/cat'
-        name='MyApp'
+        title='MyApp'
         author='lena.codes'
         description='GET - On the Play Store'
         buttonLink='https://lena.codes'
         buttonText='View'
         onClose={() => alert('pressed the close button!')}
       />
-      <h1 style={{ margin: '12px' }}>ReactSmartBanner Demo</h1>
+      <SmartBanner
+        src='https://cataas.com/cat'
+        title='MyApp'
+        author='lena.codes'
+        description='GET - On the Play Store'
+        buttonLink='https://lena.codes'
+        buttonText='View'
+        theme='dark'
+        onClose={() => alert('pressed the close button!')}
+      />
+      <h1 style={{ margin: '12px' }}>smartbanner-react demo (light & dark)</h1>
     </div>
   )
 }

@@ -1,14 +1,21 @@
 import React, { SVGProps } from 'react'
+import { Theme } from '..'
 
-export const CloseIcon: React.FC<SVGProps<SVGSVGElement>> = ({
+interface CloseIconProps extends SVGProps<SVGSVGElement> {
+  theme: Theme
+}
+
+export const CloseIcon: React.FC<CloseIconProps> = ({
+  theme = 'light',
   fill,
   height,
   width,
   ...rest
 }) => {
+  const fillColor = theme === 'light' ? 'black' : 'white'
   return (
     <svg
-      fill={fill ?? '#000000'}
+      fill={fill ?? fillColor}
       xmlns='http://www.w3.org/2000/svg'
       viewBox={'0 0 50 50'}
       width={width ?? '16px'}

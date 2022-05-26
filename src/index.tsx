@@ -4,7 +4,7 @@ import './index.css'
 
 interface SmartBannerProps {
   src: string
-  name: string
+  title: string
   author: string
   description: string
   buttonText: string
@@ -16,11 +16,11 @@ interface SmartBannerProps {
   titleColor?: string
 }
 
-type Theme = 'light' | 'dark'
+export type Theme = 'light' | 'dark'
 
 const SmartBanner: React.FC<SmartBannerProps> = ({
   src,
-  name,
+  title: name,
   author,
   description,
   buttonText,
@@ -29,23 +29,28 @@ const SmartBanner: React.FC<SmartBannerProps> = ({
   onClose
 }) => {
   return (
-    <div className={'banner'.concat(` ${theme}`)}>
+    <div className={`banner ${theme}`}>
       <div className='row'>
         {onClose && (
           <button type='button' onClick={onClose}>
-            <CloseIcon />
+            <CloseIcon theme={theme} />
           </button>
         )}
         <div className='row space-right'>
           <img src={src} role='presentation' />
           <div className='column space-left'>
-            <p className='title title-color-light'>{name}</p>
+            <p className={`title title-color-${theme}`}>{name}</p>
             <p className='text small-font'>{author}</p>
             <p className='text medium-font'>{description}</p>
           </div>
         </div>
       </div>
-      <a href={buttonLink} target='_blank' role='button'>
+      <a
+        href={buttonLink}
+        className={`link-${theme}`}
+        target='_blank'
+        role='button'
+      >
         {buttonText}
       </a>
     </div>
