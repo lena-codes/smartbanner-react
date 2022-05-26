@@ -1,5 +1,5 @@
 a {
-    margin-right: 4px;
+    margin-right: 6px;
     font-size: 18px;
     color: #0000EE;
     text-decoration: none;
@@ -10,7 +10,7 @@ button {
     cursor: pointer;
     background: transparent;
     padding: 2px;
-    margin-right: 4px;
+    margin-right: 6px;
 }
 
 img {
@@ -22,6 +22,7 @@ img {
 .banner {
     display: flex;
     flex-direction: row;
+    min-width: 0;
     max-width: 100vw;
     min-height: 65px;
     justify-content: space-between;
