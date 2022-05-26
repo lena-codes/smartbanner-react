@@ -1,63 +1,47 @@
 {
   "name": "smartbanner-react",
   "version": "1.0.0",
-  "description": "React component library implementing the iOS specific smart banner for all platforms",
-  "author": "lena-codes",
-  "license": "MIT",
-  "repository": "lena-codes/smartbanner-react",
-  "main": "dist/index.js",
-  "module": "dist/index.modern.js",
+  "description": "smartbanner react component",
+  "main": "lib/index.js",
   "source": "src/index.tsx",
-  "engines": {
-    "node": ">=10"
-  },
+  "module": "es/index.js",
+  "files": [
+    "css",
+    "es",
+    "lib",
+    "umd"
+  ],
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "prepare": "run-s build",
-    "test": "run-s test:unit test:lint test:build",
-    "test:build": "run-s build",
-    "test:lint": "eslint .",
-    "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
-    "test:watch": "react-scripts test --env=jsdom",
-    "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build"
+    "build": "npx tsc && nwb build-react-component",
+    "clean": "npm run clean:js && nwb clean-module && nwb clean-demo",
+    "clean:js": "rm demo/src/index.js src/Icon/CloseIcon.js src/index.js",
+    "prepublishOnly": "npm run build",
+    "start": "nwb serve-react-demo",
+    "test": "nwb test-react",
+    "test:coverage": "nwb test-react --coverage",
+    "test:watch": "nwb test-react --server",
+    "deploy": "gh-pages -d demo/dist"
   },
+  "dependencies": {},
   "peerDependencies": {
-    "react": "18.1.0"
+    "react": "16.x",
+    "react-dom": "^18.1.0"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "5.16.4",
-    "@testing-library/react": "13.2.0",
-    "@testing-library/user-event": "14.2.0",
-    "@types/jest": "27.5.1",
-    "@types/node": "17.0.34",
-    "@types/react": "18.0.9",
-    "@types/react-dom": "18.0.4",
-    "@typescript-eslint/eslint-plugin": "5.24.0",
-    "@typescript-eslint/parser": "5.24.0",
-    "babel-eslint": "10.1.0",
-    "cross-env": "7.0.3",
-    "eslint": "8.15.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-config-standard": "17.0.0",
-    "eslint-config-standard-react": "11.0.1",
-    "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-node": "11.1.0",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-promise": "6.0.0",
-    "eslint-plugin-react": "7.29.4",
-    "eslint-plugin-standard": "5.0.0",
-    "gh-pages": "4.0.0",
-    "microbundle-crl": "0.13.11",
-    "npm-run-all": "4.1.5",
-    "prettier": "2.6.2",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-scripts": "5.0.1",
-    "typescript": "4.6.4"
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "eslint": "^8.16.0",
+    "gh-pages": "^4.0.0",
+    "nwb": "0.25.x",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "typescript": "^4.7.2"
   },
-  "files": [
-    "dist"
+  "author": "lena-codes",
+  "homepage": "https://lena-codes.github.io/smartbanner-react/",
+  "license": "MIT",
+  "repository": "https://github.com/lena-codes/smartbanner-react",
+  "keywords": [
+    "react-component"
   ]
 }

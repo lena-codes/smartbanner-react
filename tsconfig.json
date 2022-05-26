@@ -1,22 +1,18 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "module": "esnext",
-    "lib": ["dom", "esnext"],
+    "jsx": "react-jsx",
+    "rootDir": "./",
+    "target": "es2016",
+    "module": "commonjs",
     "moduleResolution": "node",
-    "jsx": "react",
-    "sourceMap": true,
-    "declaration": true,
+    "allowJs": false,
     "esModuleInterop": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
     "noImplicitAny": true,
-    "strictNullChecks": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true
+    "skipLibCheck": true,
+    "noEmit": false
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "example"]
+  "exclude": [],
+  "include": ["src", "demo"]
 }
