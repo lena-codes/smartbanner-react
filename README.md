@@ -14,15 +14,17 @@ npm install --save smartbanner-react
 
 ```tsx
 import React, { Component } from 'react'
+import SmartBanner from 'smartbanner-react'
 
-import MyComponent from 'smartbanner-react'
-import 'smartbanner-react/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+<SmartBanner
+  src='https://cataas.com/cat'
+  name='MyApp'
+  author='lena.codes'
+  description='GET - On the Play Store'
+  buttonLink='https://lena.codes'
+  buttonText='View'
+  onClose={() => alert('pressed the close button!')}
+/>
 ```
 
 ## License
