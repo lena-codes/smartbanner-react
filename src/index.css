@@ -23,8 +23,6 @@ img {
     display: flex;
     flex-direction: row;
     max-width: 100vw;
-    min-width: 300px;
-    max-height: 65px;
     min-height: 65px;
     justify-content: space-between;
     align-items: center;
@@ -38,3 +36,51 @@ img {
     align-items: center;
 }
 
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.light {
+    color: grey;
+    background: whitesmoke;
+}
+
+.dark {
+
+}
+
+.title {
+    font-size: large;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+
+.title-color-light {
+    color: black
+}
+
+.title-color-dark {
+    color: white
+}
+
+.text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.space-right {
+    margin-right: 10px;
+}
+
+.space-left {
+    margin-left: 10px;
+}
+
+.small-font {
+    font-size: small;
+}
+
+.medium-font {
+    font-size: medium;
+}
