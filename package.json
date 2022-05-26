@@ -1,6 +1,6 @@
 {
   "name": "smartbanner-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "smartbanner react component",
   "main": "lib/index.js",
   "source": "src/index.tsx",
