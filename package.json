@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "smartbanner react component",
   "main": "lib/index.js",
-  "source": "src/index.js",
+  "source": "src/index.tsx",
   "module": "es/index.js",
   "files": [
     "css",
@@ -27,10 +27,13 @@
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
+    "@types/react": "^18.0.9",
+    "@types/react-dom": "^18.0.5",
+    "gh-pages": "^4.0.0",
     "nwb": "0.25.x",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "gh-pages": "^4.0.0"
+    "typescript": "^4.7.2"
   },
   "author": "lena-codes",
   "homepage": "https://lena-codes.github.io/smartbanner-react/",

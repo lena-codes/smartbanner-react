@@ -5,3 +5,8 @@
 /node_modules
 /umd
 npm-debug.log*
+
+/src/**/*.js
+/demo/**/*.js
+
+tsconfig.tsbuildinfo

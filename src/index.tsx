@@ -1,8 +1,20 @@
 import React from 'react'
-import CloseIcon from '../src/Icon/CloseIcon.js'
+import { CloseIcon } from './Icon/CloseIcon'
 import './index.css'
 
-const SmartBanner = ({
+interface SmartBannerProps {
+  src: string
+  name: string
+  author: string
+  description: string
+  buttonText: string
+  buttonLink: string
+  background?: string
+  onClose?: () => {} | void
+  textColor?: string
+}
+
+const SmartBanner: React.FC<SmartBannerProps> = ({
   src,
   name,
   author,
@@ -21,9 +33,11 @@ const SmartBanner = ({
       }}
     >
       <div className='row'>
-        <button type='button' onClick={onClose}>
-          <CloseIcon />
-        </button>
+        {onClose && (
+          <button type='button' onClick={onClose}>
+            <CloseIcon fill={undefined} height={undefined} width={undefined} />
+          </button>
+        )}
         <div
           className='row'
           style={{

@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { SVGProps } from 'react'
 
-const CloseIcon = ({ fill, height, width, ...rest }) => {
+export const CloseIcon: React.FC<SVGProps<SVGSVGElement>> = ({
+  fill,
+  height,
+  width,
+  ...rest
+}) => {
   return (
     <svg
       fill={fill ?? '#000000'}
@@ -14,5 +19,3 @@ const CloseIcon = ({ fill, height, width, ...rest }) => {
     </svg>
   )
 }
-
-export default CloseIcon
