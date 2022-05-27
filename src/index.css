@@ -1,32 +1,37 @@
-a {
+.smartbanner-link {
   margin-right: 6px;
   font-size: large;
   text-decoration: none;
 }
 
-.link-light {
+.smartbanner-link-light {
   color: #0000ee;
 }
 
-.link-dark {
+.smartbanner-link-dark {
   color: whitesmoke;
 }
 
-button {
-  border: none;
+.smartbanner-close-button {
   cursor: pointer;
   background: transparent;
-  padding: 2px;
-  margin-right: 6px;
+  border: none;
+  padding: 6px;
 }
 
-img {
-  height: 64px;
-  width: 64px;
+.smartbanner-close-button:hover {
+  background-color: gray;
   border-radius: 20%;
 }
 
-.banner {
+.smartbanner-img {
+  height: 64px;
+  width: 64px;
+  border-radius: 20%;
+  padding-left: 4px;
+}
+
+.smartbanner {
   display: flex;
   flex-direction: row;
   min-width: 0;
@@ -37,60 +42,60 @@ img {
   padding: 6px 14px 6px 14px;
 }
 
-.row {
+.smartbanner-row {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-.column {
+.smartbanner-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.light {
+.smartbanner-light {
   color: grey;
   background: whitesmoke;
 }
 
-.dark {
+.smartbanner-dark {
   background: rgb(31, 31, 31);
   color: rgb(191, 191, 191);
 }
 
-.title {
+.smartbanner-title {
   font-size: large;
   margin-top: 0;
   margin-bottom: 3px;
 }
 
-.title-color-light {
+.smartbanner-title-light {
   color: black;
 }
 
-.title-color-dark {
+.smartbanner-title-dark {
   color: whitesmoke;
 }
 
-.text {
+.smartbanner-text {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.space-right {
+.smartbanner-space-right {
   margin-right: 10px;
 }
 
-.space-left {
+.smartbanner-space-left {
   margin-left: 10px;
 }
 
-.small-font {
+.smartbanner-small-font {
   font-size: small;
 }
 
-.medium-font {
+.smartbanner-medium-font {
   font-size: medium;
 }

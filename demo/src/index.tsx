@@ -1,32 +1,46 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom/client'
+import Apollo from './resources/apollo.jpg'
 
 import './index.css'
-import SmartBanner from '../../src'
+import { SmartBanner, Theme } from '../../src'
 
 export const Demo: React.FC = () => {
+  const [theme, setTheme] = useState('light' as Theme)
+  const switchTheme = (theme: Theme) => {
+    switch (theme) {
+      case 'light':
+        setTheme('dark')
+        break
+      case 'dark':
+        setTheme('light')
+        break
+    }
+  }
   return (
     <div>
       <SmartBanner
-        src='https://cataas.com/cat'
+        src={Apollo}
         title='MyApp'
         author='lena.codes'
         description='GET - On the Play Store'
         buttonLink='https://lena.codes'
         buttonText='View'
         onClose={() => alert('pressed the close button!')}
+        theme={theme}
       />
-      <SmartBanner
-        src='https://cataas.com/cat'
-        title='MyApp'
-        author='lena.codes'
-        description='GET - On the Play Store'
-        buttonLink='https://lena.codes'
-        buttonText='View'
-        theme='dark'
-        onClose={() => alert('pressed the close button!')}
-      />
-      <h1 style={{ margin: '12px' }}>smartbanner-react demo (light & dark)</h1>
+      <div className='container'>
+        <h1 style={{ margin: '12px' }}>
+          smartbanner-react demo (light & dark)
+        </h1>
+        <button
+          type='button'
+          onClick={() => switchTheme(theme)}
+          className='switch-theme-button'
+        >
+          switch theme
+        </button>
+      </div>
     </div>
   )
 }

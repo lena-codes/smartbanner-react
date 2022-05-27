@@ -14,5 +14,5 @@
     "noEmit": false
   },
   "exclude": [],
-  "include": ["src", "demo"]
+  "include": ["src", "demo", "types.d.ts"]
 }
