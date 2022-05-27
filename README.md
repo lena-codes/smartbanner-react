@@ -2,7 +2,13 @@
 
 > React component library implementing the iOS specific smart banner for all platforms
 
-[![NPM](https://img.shields.io/npm/v/smartbanner-react.svg)](https://www.npmjs.com/package/smartbanner-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@lena-codes/smartbanner-react.svg)](https://www.npmjs.com/package/@lena-codes/smartbanner-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+Light Theme
+![light theme](./demo/src/resources/light.png)
+
+Dark Theme
+![dark theme](./demo/src/resources/dark.png)
 
 ## Install
 
