@@ -1,6 +1,6 @@
 {
   "name": "@lena-codes/smartbanner-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "React component library implementing the iOS specific smart banner for all platforms",
   "main": "lib/index.js",
   "source": "src/index.tsx",
