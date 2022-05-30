@@ -12,7 +12,7 @@
     "umd"
   ],
   "scripts": {
-    "build": "npx tsc && nwb build-react-component",
+    "build": "npx tsc && nwb build-react-component --copy-files",
     "clean": "npm run clean:js && nwb clean-module && nwb clean-demo",
     "clean:js": "rm demo/src/index.js src/Icon/CloseIcon.js src/index.js",
     "prepublishOnly": "npm run build",
@@ -24,8 +24,8 @@
   },
   "dependencies": {},
   "peerDependencies": {
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": ">= 16.x",
+    "react-dom": ">= 16.x"
   },
   "devDependencies": {
     "@types/react": "^18.0.9",
@@ -35,7 +35,8 @@
     "nwb": "^0.25.x",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "typescript": "^4.7.2"
+    "typescript": "^4.7.2",
+    "ts-loader": "8.2.0"
   },
   "author": "lena-codes",
   "homepage": "https://lena-codes.github.io/smartbanner-react/",

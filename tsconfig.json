@@ -2,7 +2,7 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "rootDir": "./",
-    "target": "es2016",
+    "target": "es5",
     "module": "commonjs",
     "moduleResolution": "node",
     "allowJs": false,
@@ -11,8 +11,9 @@
     "strict": true,
     "noImplicitAny": true,
     "skipLibCheck": true,
-    "noEmit": false
+    "noEmit": false,
+    "declaration": true
   },
   "exclude": [],
-  "include": ["src", "demo", "types.d.ts"]
+  "include": ["src", "demo", "index.d.ts", "types.d.ts"]
 }

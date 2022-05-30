@@ -1,7 +1,7 @@
 import React, { SVGProps } from 'react'
 import { Theme } from '..'
 
-interface CloseIconProps extends SVGProps<SVGSVGElement> {
+export interface CloseIconProps extends SVGProps<SVGSVGElement> {
   theme: Theme
 }
 
