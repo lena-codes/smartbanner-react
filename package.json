@@ -31,13 +31,19 @@
   "devDependencies": {
     "@types/react": "^18.0.9",
     "@types/react-dom": "^18.0.5",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
     "eslint": "^8.16.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.30.0",
     "gh-pages": "^4.0.0",
     "nwb": "^0.25.x",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "typescript": "^4.7.2",
-    "ts-loader": "8.2.0"
+    "typescript": "^4.7.2"
   },
   "author": "lena-codes",
   "homepage": "https://lena-codes.github.io/smartbanner-react/",

@@ -2,6 +2,7 @@ import React, { CSSProperties } from 'react'
 import { CloseIcon } from './Icon/CloseIcon'
 import './index.css'
 
+export type Theme = 'light' | 'dark'
 interface SmartBannerProps {
   src: string
   title: string
@@ -17,8 +18,6 @@ interface SmartBannerProps {
   buttonColor?: string
   closeIconColor?: string
 }
-
-export type Theme = 'light' | 'dark'
 
 export const SmartBanner: React.FC<SmartBannerProps> = ({
   src,
@@ -36,7 +35,7 @@ export const SmartBanner: React.FC<SmartBannerProps> = ({
   closeIconColor
 }) => {
   const backgroundStyle: CSSProperties = background
-    ? { background: background }
+    ? { background }
     : {}
   const titleStyle: CSSProperties = titleColor ? { color: titleColor } : {}
   const textStyle: CSSProperties = textColor ? { color: textColor } : {}
@@ -81,7 +80,7 @@ export const SmartBanner: React.FC<SmartBannerProps> = ({
         className={`smartbanner-link-${theme} smartbanner-link`}
         target='_blank'
         role='button'
-        style={buttonColorStyle}
+        style={buttonColorStyle} rel="noreferrer"
       >
         {buttonText}
       </a>
