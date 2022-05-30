@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "source": "src/index.tsx",
   "module": "es/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "css",
     "es",
