@@ -1,0 +1,197 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot Tests renders correctly for all required parameters 1`] = `
+<div
+  className="smartbanner smartbanner-light"
+  style={Object {}}
+>
+  <div
+    className="smartbanner-row"
+  >
+    <div
+      className="smartbanner-row smartbanner-space-right"
+    >
+      <img
+        className="smartbanner-img"
+        role="presentation"
+        src="random-image.png"
+      />
+      <div
+        className="smartbanner-column smartbanner-space-left"
+      >
+        <p
+          className="smartbanner-title smartbanner-title-light"
+          style={Object {}}
+        >
+          test
+        </p>
+        <p
+          className="smartbanner-text smartbanner-small-font"
+          style={Object {}}
+        >
+          testAuthor
+        </p>
+        <p
+          className="smartbanner-text smartbanner-medium-font"
+          style={Object {}}
+        >
+          this is a test
+        </p>
+      </div>
+    </div>
+  </div>
+  <a
+    className="smartbanner-link-light smartbanner-link"
+    href="google.com"
+    rel="noreferrer"
+    role="button"
+    style={Object {}}
+    target="_blank"
+  >
+    Go
+  </a>
+</div>
+`;
+
+exports[`Snapshot Tests renders correctly for dark theme 1`] = `
+<div
+  className="smartbanner smartbanner-dark"
+  style={Object {}}
+>
+  <div
+    className="smartbanner-row"
+  >
+    <div
+      className="smartbanner-row smartbanner-space-right"
+    >
+      <img
+        className="smartbanner-img"
+        role="presentation"
+        src="random-image.png"
+      />
+      <div
+        className="smartbanner-column smartbanner-space-left"
+      >
+        <p
+          className="smartbanner-title smartbanner-title-dark"
+          style={Object {}}
+        >
+          test
+        </p>
+        <p
+          className="smartbanner-text smartbanner-small-font"
+          style={Object {}}
+        >
+          testAuthor
+        </p>
+        <p
+          className="smartbanner-text smartbanner-medium-font"
+          style={Object {}}
+        >
+          this is a test
+        </p>
+      </div>
+    </div>
+  </div>
+  <a
+    className="smartbanner-link-dark smartbanner-link"
+    href="google.com"
+    rel="noreferrer"
+    role="button"
+    style={Object {}}
+    target="_blank"
+  >
+    Go
+  </a>
+</div>
+`;
+
+exports[`Snapshot Tests renders correctly when all theme overwrite parameters are set 1`] = `
+<div
+  className="smartbanner smartbanner-light"
+  style={
+    Object {
+      "background": "green",
+    }
+  }
+>
+  <div
+    className="smartbanner-row"
+  >
+    <button
+      className="smartbanner-close-button"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        fill="yellow"
+        height="16px"
+        viewBox="0 0 50 50"
+        width="16px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+        />
+      </svg>
+    </button>
+    <div
+      className="smartbanner-row smartbanner-space-right"
+    >
+      <img
+        className="smartbanner-img"
+        role="presentation"
+        src="random-image.png"
+      />
+      <div
+        className="smartbanner-column smartbanner-space-left"
+      >
+        <p
+          className="smartbanner-title smartbanner-title-light"
+          style={
+            Object {
+              "color": "purple",
+            }
+          }
+        >
+          test
+        </p>
+        <p
+          className="smartbanner-text smartbanner-small-font"
+          style={
+            Object {
+              "color": "pink",
+            }
+          }
+        >
+          testAuthor
+        </p>
+        <p
+          className="smartbanner-text smartbanner-medium-font"
+          style={
+            Object {
+              "color": "pink",
+            }
+          }
+        >
+          this is a test
+        </p>
+      </div>
+    </div>
+  </div>
+  <a
+    className="smartbanner-link-light smartbanner-link"
+    href="google.com"
+    rel="noreferrer"
+    role="button"
+    style={
+      Object {
+        "color": "red",
+      }
+    }
+    target="_blank"
+  >
+    Go
+  </a>
+</div>
+`;

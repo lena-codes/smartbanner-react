@@ -40,7 +40,7 @@ export const SmartBanner: React.FC<SmartBannerProps> = ({
   const titleStyle: CSSProperties = titleColor ? { color: titleColor } : {}
   const textStyle: CSSProperties = textColor ? { color: textColor } : {}
   const buttonColorStyle: CSSProperties = buttonColor
-    ? { backgroundColor: buttonColor }
+    ? { color: buttonColor }
     : {}
   return (
     <div className={`smartbanner smartbanner-${theme}`} style={backgroundStyle}>
@@ -69,7 +69,10 @@ export const SmartBanner: React.FC<SmartBannerProps> = ({
             >
               {author}
             </p>
-            <p className='smartbanner-text smartbanner-medium-font'>
+            <p
+              className='smartbanner-text smartbanner-medium-font'
+              style={textStyle}
+            >
               {description}
             </p>
           </div>
@@ -80,7 +83,8 @@ export const SmartBanner: React.FC<SmartBannerProps> = ({
         className={`smartbanner-link-${theme} smartbanner-link`}
         target='_blank'
         role='button'
-        style={buttonColorStyle} rel="noreferrer"
+        style={buttonColorStyle}
+        rel='noreferrer'
       >
         {buttonText}
       </a>

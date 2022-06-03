@@ -4,7 +4,7 @@
 // Definitions by: lena-codes <https://lena.codes>
 
 import React from 'react'
-import { SmartBannerProps } from '.'
+import { SmartBannerProps } from './src/index'
 import { CloseIconProps } from './src/Icon/CloseIcon'
 
 declare const SmartBanner: React.FC<SmartBannerProps>
