@@ -3,6 +3,7 @@
 > React component library implementing the iOS specific smart banner for all platforms
 
 [![NPM](https://img.shields.io/npm/v/@lena-codes/smartbanner-react.svg)](https://www.npmjs.com/package/@lena-codes/smartbanner-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![Build Status](https://app.travis-ci.com/lena-codes/smartbanner-react.svg?branch=main)](https://app.travis-ci.com/lena-codes/smartbanner-react)
 
 Light Theme
 ![light theme](https://github.com/lena-codes/smartbanner-react/blob/main/demo/src/resources/light.png?raw=true)
